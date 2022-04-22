@@ -1,29 +1,13 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
+.nav--app-logo {
+  height: 40px;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .nav--app-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +19,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  display: flex;
+  background: #21222a;
+  height: 91px;
+  background: #21222a;
+  align-items: center;
+  padding: 30px 25px;
+}
+
+.nav--logo-text,
+.nav--title {
+  margin: 0;
+}
+
+.nav--logo-text {
+  margin-right: auto;
+  color: #61dafb;
+  font-size: 22px;
+}
+
+.nav--title {
+  color: #deebf8;
+}
+
+.nav--app-logo {
+  height: 30px;
+  margin-right: 7px;
+  font-weight: 600;
+}
+
+main {
+  padding: 57px 27px;
+  color: white;
+  background-image: url(./logo.svg);
+  background-repeat: no-repeat;
+  background-position: 193% 75%;
+}
+
+.main--title {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+.main--facts {
+  margin-top: 46px;
+}
+
+.main--facts > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  color: #61dafb;
+  font-size: 1.4rem;
 }
